@@ -1,5 +1,6 @@
 import express from 'express';
 import router from './router/index.js';
+import { logger } from './conf/logger.js';
 import dotenv from 'dotenv';
 dotenv.config();
 
@@ -12,5 +13,5 @@ app.use(express.static('public'));
 app.use(router())
 
 app.listen(port, () => {
-  console.log(`Server is running on http://localhost:${port}`);
+  logger.info(`Server started on port ${port}`);
 });

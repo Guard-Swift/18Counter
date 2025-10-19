@@ -1,4 +1,8 @@
 node_modules/
 docs/memo.md
 docs/environment_info.md
-.env
+
+src/.env
+src/node_modules
+
+
